@@ -1,0 +1,118 @@
+[tool.poetry]
+name = "recoverpy"
+version = "2.1.7"
+description = "A TUI to recover overwritten or deleted data."
+authors = ["ShreejitSaha <parachuteregiment09@gmail.com>"]
+license = "GPL-3.0 License"
+readme = "README.md"
+homepage = "https://github.com/Shreejit2003/recoverpy"
+repository = "https://github.com/Shreejit2003/recoverpy"
+documentation = "https://github.com/Shreejit2003/recoverpy#readme"
+keywords = ["data",
+    "recovery",
+    "search",
+    "cli",
+    "console",
+    "cui",
+    "tui",
+    "ncurses",
+    "terminal",
+    "cybersec",
+    "cybersecurity",
+    "security",
+    "pentesting",
+    "pentest",
+    "forensics",
+    "forensic",
+    "hack",
+    "hacking",
+    "data recovery",
+    "data recovery tool",
+    "grep",
+    "linux",
+    "unix",
+    "education",
+    "teaching",
+    "training",
+    "teach",
+    "learn",
+    "textual",
+    "asyncio",
+    "async",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: POSIX :: Linux",
+    "Environment :: Console",
+    "Environment :: Console :: Curses",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Education",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: System :: Filesystems",
+    "Topic :: System :: Archiving :: Backup",
+    "Topic :: System :: Recovery Tools",
+    "Topic :: System :: Shells",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Terminals",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+    "Framework :: AsyncIO",
+]
+
+[tool.poetry.scripts]
+recoverpy = "recoverpy.__init__:main"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+textual = "0.63.2"
+
+[tool.poetry.dev-dependencies]
+coverage = "^7.5.3"
+pytest = "^8.2.1"
+pylint = "^3.2.2"
+isort = "^5.13.2"
+black = "^24.4"
+flake8 = "^7.0.0"
+pre-commit = "^3.5.0"
+flake8-bandit = "^4.1.1"
+flake8-bugbear = "^24.4.26"
+flake8-builtins = "^2.5.0"
+flake8-comprehensions = "^3.14.0"
+darglint = "^1.8.1"
+flake8-docstrings = "^1.7.0"
+flake8-isort = "^6.1.1"
+flake8-pytest-style = "^2.0.0"
+flake8-mutable = "^1.2.0"
+flake8-html = "^0.4.1"
+flake8-simplify = "^0.21.0"
+flake8-aaa = "^0.17.0"
+pytest-mock = "3.14.0"
+pytest-cov = "^5.0.0"
+coverage-badge = "^1.1.1"
+mypy = "^1.10"
+types-PyYAML = "^6.0.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest-asyncio = ">=0.20.3,<0.24.0"
+ruff = ">=0.0.263,<0.4.7"
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+python_version = 3.8
+ignore_missing_imports = "true"
+disallow_untyped_calls = "false"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
